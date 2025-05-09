@@ -11,8 +11,48 @@
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Playfair+Display:wght@400;600;700&display=swap" rel="stylesheet">
 </head>
 <body class="bg-neutral-900 text-white antialiased">
-  <!-- Componente menu -->
-  <div data-component="menu"></div>
+  <!-- Menu -->
+  <nav class="bg-neutral-900 w-full fixed top-0 left-0 z-50 shadow-md">
+    <div class="container mx-auto flex justify-between items-center py-4 px-6">
+      <div class="text-2xl font-bold uppercase text-white">
+        Alessio Rossetti
+      </div>
+      <div class="hidden md:flex space-x-8">
+        <a href="../index.html" class="text-white hover:text-amber-500 font-medium">Home</a>
+        <a href="../projects.html" class="text-white hover:text-amber-500 font-medium">Progetti</a>
+        <a href="../about.html" class="text-white hover:text-amber-500 font-medium">Chi sono</a>
+        <a href="../contact.html" class="text-white hover:text-amber-500 font-medium">Contatti</a>
+      </div>
+      <!-- Mobile menu button - solo visibile su mobile -->
+      <div class="md:hidden">
+        <a href="#" id="menu-toggle" class="block text-white">
+          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" class="w-8 h-8">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+          </svg>
+        </a>
+      </div>
+    </div>
+  </nav>
+  
+  <!-- Menu overlay per mobile -->
+  <div id="menu-overlay" class="fixed inset-0 z-[9998] bg-black/95 hidden">
+    <div class="h-full w-full flex flex-col justify-center items-center">
+      <button id="close-menu" class="absolute top-6 right-6 text-white">
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" class="w-8 h-8">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
+        </svg>
+      </button>
+      <div class="flex flex-col space-y-4 text-center">
+        <a href="../index.html" class="text-white text-2xl hover:text-amber-500 py-2">Home</a>
+        <a href="../projects.html" class="text-white text-2xl hover:text-amber-500 py-2">Progetti</a>
+        <a href="../about.html" class="text-white text-2xl hover:text-amber-500 py-2">Chi sono</a>
+        <a href="../contact.html" class="text-white text-2xl hover:text-amber-500 py-2">Contatti</a>
+      </div>
+    </div>
+  </div>
+  
+  <!-- Spazio per compensare la navbar fissa -->
+  <div class="h-20"></div>
   
   <!-- Project Header -->
   <header class="pt-32 pb-12 px-6">
@@ -102,8 +142,36 @@
     </div>
   </section>
   
-  <!-- Componente footer -->
-  <div data-component="footer"></div>
+  <!-- Footer -->
+  <footer class="bg-neutral-900 py-12 px-6 text-white">
+    <div class="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-8">
+      <!-- Categorie -->
+      <div>
+        <h3 class="text-xl font-bold uppercase mb-4">Categorie</h3>
+        <ul class="space-y-2 text-gray-300">
+          <li><a href="musica.html" class="hover:underline">Musica dal vivo</a></li>
+          <li><a href="eventi.html" class="hover:underline">Eventi</a></li>
+          <li><a href="fashion.html" class="hover:underline">Fashion</a></li>
+          <li><a href="ritratti.html" class="hover:underline">Ritratti</a></li>
+        </ul>
+      </div>
+      <div>
+        <h3 class="text-xl mb-4 uppercase">ALESSIO ROSSETTI</h3>
+        <p class="text-gray-400 text-sm">Fotografo professionista specializzato in ritratti, eventi e fashion photography.</p>
+      </div>
+      <div>
+        <h3 class="text-xl mb-4 uppercase">CONTATTI</h3>
+        <ul class="text-sm space-y-2">
+          <li><a href="mailto:alessio@fotografo.com" class="text-gray-400 hover:text-white">alessio@fotografo.com</a></li>
+          <li><a href="tel:+391234567890" class="text-gray-400 hover:text-white">+39 123 456 7890</a></li>
+          <li><a href="https://instagram.com/alessiorossetti" class="text-gray-400 hover:text-white">Instagram: @alessiorossetti</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="max-w-6xl mx-auto mt-8 pt-8 border-t border-gray-700 text-center text-sm text-gray-500">
+      <p>&copy; 2025 Alessio Rossetti. Tutti i diritti riservati.</p>
+    </div>
+  </footer>
   
   <!-- Scroll to top button -->
   <button id="scrollTop" class="hidden fixed bottom-4 right-4 bg-amber-500 text-white p-3 rounded-full focus:outline-none">↑</button>
