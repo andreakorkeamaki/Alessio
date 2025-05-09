@@ -14,12 +14,12 @@ Nota: Le seguenti immagini sono necessarie per completare il sito. Alcune immagi
 1. assets/images/profile.jpg - Foto del fotografo per la sezione 'Chi sono' (dimensioni consigliate: 800x1000px)
 
 2. Immagini per la griglia dei progetti in home page e nella pagina progetti:
-   - assets/images/project1.jpg - Ritratto in studio (dimensioni consigliate: 800x1000px)
-   - assets/images/project2.jpg - Paesaggio montano (dimensioni consigliate: 800x1000px)
-   - assets/images/project3.jpg - Still life artistico (dimensioni consigliate: 800x1000px)
-   - assets/images/project4.jpg - Evento culturale (dimensioni consigliate: 800x1000px)
-   - assets/images/project5.jpg - Ritratto ambientato (dimensioni consigliate: 800x1000px)
-   - assets/images/project6.jpg - Architettura urbana (dimensioni consigliate: 800x1000px)
+   - assets/images/project1.jpg - Musica dal vivo (dimensioni consigliate: 800x1000px)
+   - assets/images/project2.jpg - Eventi (dimensioni consigliate: 800x1000px)
+   - assets/images/project3.jpg - Fashion (dimensioni consigliate: 800x1000px)
+   - assets/images/project4.jpg - Musica dal vivo 2 (dimensioni consigliate: 800x1000px)
+   - assets/images/project5.jpg - Eventi 2 (dimensioni consigliate: 800x1000px)
+   - assets/images/project6.jpg - Fashion 2 (dimensioni consigliate: 800x1000px)
 
 3. Immagini per la pagina dei ritratti:
    - assets/images/ritratto1.jpg - Ritratto in studio (dimensioni consigliate: 800x1000px)
