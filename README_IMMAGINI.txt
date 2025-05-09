@@ -4,10 +4,10 @@ Nota: Le seguenti immagini sono necessarie per completare il sito. Alcune immagi
 
 ## Immagini già presenti
 
-- assets/images/hero_1.png - Prima immagine dello slideshow nella home page
-- assets/images/hero_2.png - Seconda immagine dello slideshow nella home page
-- assets/images/hero_3.png - Terza immagine dello slideshow nella home page
-- assets/images/hero_4.png - Quarta immagine dello slideshow nella home page
+- assets/images/hero_1.webp - Prima immagine dello slideshow nella home page
+- assets/images/hero_2.webp - Seconda immagine dello slideshow nella home page
+- assets/images/hero_3.webp - Terza immagine dello slideshow nella home page
+- assets/images/hero_4.webp - Quarta immagine dello slideshow nella home page
 
 ## Immagini da aggiungere
 
