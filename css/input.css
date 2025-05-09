@@ -7,9 +7,23 @@
     font-family: theme('fontFamily.inter');
   }
   h1, h2, h3, h4, h5, h6 {
-    font-family: theme('fontFamily.playfair');
+    font-family: 'Anton', Arial, sans-serif;
+    letter-spacing: -0.01em;
   }
 }
+
+/* Utility per outline e testo vuoto */
+.outline-title {
+  color: transparent;
+  -webkit-text-stroke: 2px #111;
+  text-stroke: 2px #111;
+}
+.filled-title {
+  color: #111;
+  -webkit-text-stroke: 0px;
+  text-stroke: 0px;
+}
+
 
 @layer components {
   /* Project cards */

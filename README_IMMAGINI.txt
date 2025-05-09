@@ -11,20 +11,20 @@ Nota: Le seguenti immagini sono necessarie per completare il sito. Alcune immagi
 
 ## Immagini da aggiungere
 
-1. assets/images/profile.jpg - Foto del fotografo per la sezione 'Chi sono' (dimensioni consigliate: 800x1000px)
+1. assets/images/profile.webp - Foto del fotografo per la sezione 'Chi sono' (dimensioni consigliate: 800x1000px)
 
 2. Immagini per la griglia dei progetti in home page e nella pagina progetti:
-   - assets/images/project1.jpg - Musica dal vivo (dimensioni consigliate: 800x1000px)
-   - assets/images/project2.jpg - Eventi (dimensioni consigliate: 800x1000px)
-   - assets/images/project3.jpg - Fashion (dimensioni consigliate: 800x1000px)
+   - assets/images/project1.webp - Musica dal vivo (dimensioni consigliate: 800x1000px)
+   - assets/images/project2.webp - Eventi (dimensioni consigliate: 800x1000px)
+   - assets/images/project3.webp - Fashion (dimensioni consigliate: 800x1000px)
 
 3. Immagini per la pagina dei ritratti:
-   - assets/images/ritratto1.jpg - Ritratto in studio (dimensioni consigliate: 800x1000px)
-   - assets/images/ritratto2.jpg - Ritratto all'aperto (dimensioni consigliate: 800x1000px)
-   - assets/images/ritratto3.jpg - Ritratto in bianco e nero (dimensioni consigliate: 800x1000px)
-   - assets/images/ritratto4.jpg - Ritratto artistico (dimensioni consigliate: 800x1000px)
-   - assets/images/ritratto5.jpg - Ritratto di famiglia (dimensioni consigliate: 800x1000px)
-   - assets/images/ritratto6.jpg - Ritratto di coppia (dimensioni consigliate: 800x1000px)
+   - assets/images/ritratto1.webp - Ritratto in studio (dimensioni consigliate: 800x1000px)
+   - assets/images/ritratto2.webp - Ritratto all'aperto (dimensioni consigliate: 800x1000px)
+   - assets/images/ritratto3.webp - Ritratto in bianco e nero (dimensioni consigliate: 800x1000px)
+   - assets/images/ritratto4.webp - Ritratto artistico (dimensioni consigliate: 800x1000px)
+   - assets/images/ritratto5.webp - Ritratto di famiglia (dimensioni consigliate: 800x1000px)
+   - assets/images/ritratto6.webp - Ritratto di coppia (dimensioni consigliate: 800x1000px)
 
 ## Linee guida per le immagini
 

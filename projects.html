@@ -3,32 +3,52 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>{{ siteTitle }} - Progetti</title>
-  <meta name="description" content="Progetti fotografici e portfolio di Alessio Fotografo.">
+  <title>Alessio Rossetti - Progetti</title>
+  <meta name="description" content="Progetti fotografici e portfolio di Alessio Rossetti, fotografo specializzato in eventi, musica e fashion.">
   <link rel="stylesheet" href="css/styles.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Playfair+Display:wght@400;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Anton&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <script type="application/ld+json">
+  {
+    "@context": "http://schema.org",
+    "@type": "Person",
+    "name": "Alessio Rossetti",
+    "url": "https://alessiorossetti.com",
+    "sameAs": ["https://instagram.com/alessiorossetti"]
+  }
+  </script>
 </head>
 <body class="bg-white text-black antialiased">
-  <!-- Navbar -->
-  <nav class="fixed top-0 w-full backdrop-blur-md bg-white/50 z-50">
-    <div class="max-w-6xl mx-auto flex items-center justify-between py-4 px-6">
-      <a href="index.html" class="font-playfair text-xl">{{ siteTitle }}</a>
-      <ul class="flex space-x-6 text-sm">
-        <li><a href="index.html">Home</a></li>
-        <li><a href="projects.html" class="font-medium">Progetti</a></li>
-        <li><a href="about.html">Chi sono</a></li>
-        <li><a href="contact.html">Contatti</a></li>
-      </ul>
+  <!-- Menu overlay -->
+  <div id="menu-overlay" class="fixed inset-0 z-[9998] bg-black/95 hidden">
+    <div class="h-full w-full flex flex-col justify-center items-center">
+      <nav class="flex flex-col space-y-8 text-3xl md:text-5xl text-white font-bold uppercase text-center">
+        <a href="index.html" class="hover:text-amber-400 transition-colors">Home</a>
+        <a href="projects.html" class="hover:text-amber-400 transition-colors">Progetti</a>
+        <a href="about.html" class="hover:text-amber-400 transition-colors">Chi sono</a>
+        <a href="contact.html" class="hover:text-amber-400 transition-colors">Contatti</a>
+      </nav>
     </div>
+    <button id="close-menu" class="absolute top-8 right-8 text-white text-4xl hover:text-amber-400 transition-colors">&times;</button>
+  </div>
+  
+  <!-- Navbar con hamburger menu -->
+  <nav class="fixed top-6 right-6 z-[9999]">
+    <button id="menu-toggle" class="block bg-black/60 rounded-full p-2 text-white shadow-lg focus:outline-none">
+      <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" class="w-8 h-8">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+      </svg>
+    </button>
   </nav>
   
   <!-- Projects Header -->
-  <header class="pt-32 pb-12 px-6">
-    <div class="max-w-6xl mx-auto">
-      <h1 class="text-4xl md:text-5xl font-playfair mb-6">Progetti</h1>
-      <p class="max-w-2xl text-gray-600">Una selezione dei miei lavori fotografici più significativi nei settori della musica dal vivo, eventi e fashion. Ogni progetto racconta una storia unica attraverso immagini.</p>
+  <header class="min-h-[50vh] flex items-center bg-neutral-900 text-white relative overflow-hidden">
+    <div class="w-full max-w-7xl mx-auto flex flex-col md:flex-row items-center md:items-start justify-start z-10 relative py-24 px-6">
+      <div class="w-full md:w-1/2 flex flex-col justify-center items-start">
+        <h1 class="text-5xl sm:text-7xl md:text-8xl leading-none mb-6 uppercase filled-title">PROGETTI</h1>
+        <p class="text-xl text-gray-300 max-w-xl">Una selezione dei miei lavori fotografici più significativi nei settori della musica dal vivo, eventi e fashion. Ogni progetto racconta una storia unica attraverso immagini.</p>
+      </div>
     </div>
   </header>
   
@@ -37,7 +57,7 @@
     <div class="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-8">
       <!-- Project 1 - Musica dal vivo -->
       <div class="project-card">
-        <img src="assets/images/project1.jpg" alt="Musica dal vivo" class="w-full aspect-[4/5] object-cover">
+        <img src="assets/images/project1.webp" alt="Musica dal vivo" class="w-full aspect-[4/5] object-cover">
         <div class="overlay">
           <a href="projects/musica.html" class="text-white text-xl font-playfair hover:underline">Musica dal vivo</a>
         </div>
@@ -45,7 +65,7 @@
       
       <!-- Project 2 - Eventi -->
       <div class="project-card">
-        <img src="assets/images/project2.jpg" alt="Eventi" class="w-full aspect-[4/5] object-cover">
+        <img src="assets/images/project2.webp" alt="Eventi" class="w-full aspect-[4/5] object-cover">
         <div class="overlay">
           <a href="projects/eventi.html" class="text-white text-xl font-playfair hover:underline">Eventi</a>
         </div>
@@ -53,7 +73,7 @@
       
       <!-- Project 3 - Fashion -->
       <div class="project-card">
-        <img src="assets/images/project3.jpg" alt="Fashion" class="w-full aspect-[4/5] object-cover">
+        <img src="assets/images/project3.webp" alt="Fashion" class="w-full aspect-[4/5] object-cover">
         <div class="overlay">
           <a href="projects/fashion.html" class="text-white text-xl font-playfair hover:underline">Fashion</a>
         </div>
@@ -64,30 +84,31 @@
   <!-- Footer -->
   <footer class="bg-gray-100 py-12 px-6">
     <div class="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-8">
+      <!-- Categorie corrette -->
       <div>
-        <h3 class="font-playfair text-xl mb-4">Alessio Fotografo</h3>
-        <p class="text-gray-600 text-sm">Fotografo professionista specializzato in ritratti e paesaggi.</p>
-      </div>
-      <div>
-        <h3 class="font-playfair text-xl mb-4">Contatti</h3>
-        <ul class="text-sm space-y-2">
-          <li><a href="mailto:alessio@fotografo.com" class="text-gray-600 hover:text-black">alessio@fotografo.com</a></li>
-          <li><a href="tel:+391234567890" class="text-gray-600 hover:text-black">+39 123 456 7890</a></li>
-          <li><a href="https://instagram.com/alessiofotografo" class="text-gray-600 hover:text-black">Instagram: @alessiofotografo</a></li>
+        <h3 class="text-xl font-bold uppercase mb-4">Categorie</h3>
+        <ul class="space-y-2 text-gray-700">
+          <li><a href="projects/musica.html" class="hover:underline">Musica dal vivo</a></li>
+          <li><a href="projects/eventi.html" class="hover:underline">Eventi</a></li>
+          <li><a href="projects/fashion.html" class="hover:underline">Fashion</a></li>
+          <li><a href="projects/ritratti.html" class="hover:underline">Ritratti</a></li>
         </ul>
       </div>
       <div>
-        <h3 class="font-playfair text-xl mb-4">Categorie</h3>
+        <h3 class="text-xl mb-4 uppercase">ALESSIO ROSSETTI</h3>
+        <p class="text-gray-600 text-sm">Fotografo professionista specializzato in ritratti e paesaggi.</p>
+      </div>
+      <div>
+        <h3 class="text-xl mb-4 uppercase">CONTATTI</h3>
         <ul class="text-sm space-y-2">
-          <li><a href="projects/ritratti.html" class="text-gray-600 hover:text-black">Ritratti</a></li>
-          <li><a href="projects/paesaggi.html" class="text-gray-600 hover:text-black">Paesaggi</a></li>
-          <li><a href="projects/still-life.html" class="text-gray-600 hover:text-black">Still Life</a></li>
-          <li><a href="projects/eventi.html" class="text-gray-600 hover:text-black">Eventi</a></li>
+          <li><a href="mailto:alessio@fotografo.com" class="text-gray-600 hover:text-black">alessio@fotografo.com</a></li>
+          <li><a href="tel:+391234567890" class="text-gray-600 hover:text-black">+39 123 456 7890</a></li>
+          <li><a href="https://instagram.com/alessiorossetti" class="text-gray-600 hover:text-black">Instagram: @alessiorossetti</a></li>
         </ul>
       </div>
     </div>
     <div class="max-w-6xl mx-auto mt-8 pt-8 border-t border-gray-200 text-center text-sm text-gray-500">
-      <p>&copy; 2025 Alessio Fotografo. Tutti i diritti riservati.</p>
+      <p>&copy; 2025 Alessio Rossetti. Tutti i diritti riservati.</p>
     </div>
   </footer>
   
@@ -95,5 +116,6 @@
   <button id="scrollTop" class="hidden fixed bottom-4 right-4 bg-amber-500 text-white p-3 rounded-full focus:outline-none">↑</button>
   
   <script type="module" src="js/main.js"></script>
+  <script src="js/menu.js"></script>
 </body>
 </html>
