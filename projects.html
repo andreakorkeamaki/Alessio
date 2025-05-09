@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>{{ siteTitle }} - Progetti</title>
+  <meta name="description" content="Progetti fotografici e portfolio di Alessio Fotografo.">
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Playfair+Display:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+<body class="bg-white text-black antialiased">
+  <!-- Navbar -->
+  <nav class="fixed top-0 w-full backdrop-blur-md bg-white/50 z-50">
+    <div class="max-w-6xl mx-auto flex items-center justify-between py-4 px-6">
+      <a href="index.html" class="font-playfair text-xl">{{ siteTitle }}</a>
+      <ul class="flex space-x-6 text-sm">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="projects.html" class="font-medium">Progetti</a></li>
+        <li><a href="about.html">Chi sono</a></li>
+        <li><a href="contact.html">Contatti</a></li>
+      </ul>
+    </div>
+  </nav>
+  
+  <!-- Projects Header -->
+  <header class="pt-32 pb-12 px-6">
+    <div class="max-w-6xl mx-auto">
+      <h1 class="text-4xl md:text-5xl font-playfair mb-6">Progetti</h1>
+      <p class="max-w-2xl text-gray-600">Una selezione dei miei lavori fotografici più significativi. Ogni progetto racconta una storia unica attraverso immagini.</p>
+    </div>
+  </header>
+  
+  <!-- Projects Grid -->
+  <section class="px-6 pb-24">
+    <div class="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+      <!-- Project 1 -->
+      <div class="project-card">
+        <img src="assets/images/project1.jpg" alt="Ritratto in studio" class="w-full aspect-[4/5] object-cover">
+        <div class="overlay">
+          <a href="projects/ritratti.html" class="text-white text-xl font-playfair hover:underline">Ritratti</a>
+        </div>
+      </div>
+      
+      <!-- Project 2 -->
+      <div class="project-card">
+        <img src="assets/images/project2.jpg" alt="Paesaggio montano" class="w-full aspect-[4/5] object-cover">
+        <div class="overlay">
+          <a href="projects/paesaggi.html" class="text-white text-xl font-playfair hover:underline">Paesaggi</a>
+        </div>
+      </div>
+      
+      <!-- Project 3 -->
+      <div class="project-card">
+        <img src="assets/images/project3.jpg" alt="Still life artistico" class="w-full aspect-[4/5] object-cover">
+        <div class="overlay">
+          <a href="projects/still-life.html" class="text-white text-xl font-playfair hover:underline">Still Life</a>
+        </div>
+      </div>
+      
+      <!-- Project 4 -->
+      <div class="project-card">
+        <img src="assets/images/project4.jpg" alt="Evento culturale" class="w-full aspect-[4/5] object-cover">
+        <div class="overlay">
+          <a href="projects/eventi.html" class="text-white text-xl font-playfair hover:underline">Eventi</a>
+        </div>
+      </div>
+      
+      <!-- Project 5 -->
+      <div class="project-card">
+        <img src="assets/images/project5.jpg" alt="Ritratto ambientato" class="w-full aspect-[4/5] object-cover">
+        <div class="overlay">
+          <a href="projects/ritratti-ambientati.html" class="text-white text-xl font-playfair hover:underline">Ritratti Ambientati</a>
+        </div>
+      </div>
+      
+      <!-- Project 6 -->
+      <div class="project-card">
+        <img src="assets/images/project6.jpg" alt="Architettura urbana" class="w-full aspect-[4/5] object-cover">
+        <div class="overlay">
+          <a href="projects/architettura.html" class="text-white text-xl font-playfair hover:underline">Architettura</a>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+  <!-- Footer -->
+  <footer class="bg-gray-100 py-12 px-6">
+    <div class="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-8">
+      <div>
+        <h3 class="font-playfair text-xl mb-4">Alessio Fotografo</h3>
+        <p class="text-gray-600 text-sm">Fotografo professionista specializzato in ritratti e paesaggi.</p>
+      </div>
+      <div>
+        <h3 class="font-playfair text-xl mb-4">Contatti</h3>
+        <ul class="text-sm space-y-2">
+          <li><a href="mailto:alessio@fotografo.com" class="text-gray-600 hover:text-black">alessio@fotografo.com</a></li>
+          <li><a href="tel:+391234567890" class="text-gray-600 hover:text-black">+39 123 456 7890</a></li>
+          <li><a href="https://instagram.com/alessiofotografo" class="text-gray-600 hover:text-black">Instagram: @alessiofotografo</a></li>
+        </ul>
+      </div>
+      <div>
+        <h3 class="font-playfair text-xl mb-4">Categorie</h3>
+        <ul class="text-sm space-y-2">
+          <li><a href="projects/ritratti.html" class="text-gray-600 hover:text-black">Ritratti</a></li>
+          <li><a href="projects/paesaggi.html" class="text-gray-600 hover:text-black">Paesaggi</a></li>
+          <li><a href="projects/still-life.html" class="text-gray-600 hover:text-black">Still Life</a></li>
+          <li><a href="projects/eventi.html" class="text-gray-600 hover:text-black">Eventi</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="max-w-6xl mx-auto mt-8 pt-8 border-t border-gray-200 text-center text-sm text-gray-500">
+      <p>&copy; 2025 Alessio Fotografo. Tutti i diritti riservati.</p>
+    </div>
+  </footer>
+  
+  <!-- Scroll to top button -->
+  <button id="scrollTop" class="hidden fixed bottom-4 right-4 bg-amber-500 text-white p-3 rounded-full focus:outline-none">↑</button>
+  
+  <script type="module" src="js/main.js"></script>
+</body>
+</html>

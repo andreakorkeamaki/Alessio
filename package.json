@@ -1,0 +1,16 @@
+{
+  "name": "photography-portfolio",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "start": "live-server --open=./index.html",
+    "build:css": "tailwindcss -i ./css/input.css -o ./css/styles.css --minify",
+    "watch:css": "tailwindcss -i ./css/input.css -o ./css/styles.css --watch"
+  },
+  "devDependencies": {
+    "tailwindcss": "^3.4.0",
+    "postcss": "^8.4.0",
+    "autoprefixer": "^10.4.0",
+    "live-server": "^1.2.1"
+  }
+}

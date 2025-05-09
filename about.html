@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>{{ siteTitle }} - Chi sono</title>
+  <meta name="description" content="Biografia e informazioni su Alessio Fotografo.">
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Playfair+Display:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+<body class="bg-white text-black antialiased">
+  <!-- Navbar -->
+  <nav class="fixed top-0 w-full backdrop-blur-md bg-white/50 z-50">
+    <div class="max-w-6xl mx-auto flex items-center justify-between py-4 px-6">
+      <a href="index.html" class="font-playfair text-xl">{{ siteTitle }}</a>
+      <ul class="flex space-x-6 text-sm">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="projects.html">Progetti</a></li>
+        <li><a href="about.html" class="font-medium">Chi sono</a></li>
+        <li><a href="contact.html">Contatti</a></li>
+      </ul>
+    </div>
+  </nav>
+  
+  <!-- About Header -->
+  <header class="pt-32 pb-12 px-6">
+    <div class="max-w-6xl mx-auto">
+      <h1 class="text-4xl md:text-5xl font-playfair mb-6">Chi sono</h1>
+    </div>
+  </header>
+  
+  <!-- About Content -->
+  <section class="px-6 pb-24">
+    <div class="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+      <div>
+        <img src="assets/images/profile.jpg" alt="Alessio Fotografo" class="w-full rounded-lg shadow-lg">
+      </div>
+      <div>
+        <h2 class="text-3xl font-playfair mb-6">Alessio Fotografo</h2>
+        <p class="mb-4 text-gray-700 leading-relaxed">Alessio è un fotografo professionista specializzato in ritratti e fotografia di paesaggio. Con oltre 10 anni di esperienza, cattura momenti ed emozioni attraverso il suo obiettivo con una sensibilità unica.</p>
+        <p class="mb-4 text-gray-700 leading-relaxed">Nato e cresciuto in Italia, ha sviluppato fin da giovane una passione per l'arte visiva e la fotografia. Dopo aver completato gli studi in Belle Arti, ha iniziato la sua carriera come fotografo freelance, collaborando con diverse riviste e brand.</p>
+        <p class="mb-4 text-gray-700 leading-relaxed">Il suo approccio alla fotografia combina tecnica impeccabile e sensibilità artistica, creando immagini che raccontano storie e suscitano emozioni. Ogni scatto è il risultato di una ricerca continua della bellezza e dell'autenticità.</p>
+        <p class="mb-8 text-gray-700 leading-relaxed">Oltre al suo lavoro come fotografo, Alessio conduce workshop e corsi di fotografia, condividendo la sua esperienza e passione con aspiranti fotografi.</p>
+        
+        <div class="flex space-x-4">
+          <a href="https://instagram.com/alessiofotografo" class="px-4 py-2 border border-gray-300 rounded hover:bg-gray-100 transition">Instagram</a>
+          <a href="contact.html" class="px-4 py-2 bg-amber-500 text-white rounded hover:bg-amber-600 transition">Contattami</a>
+        </div>
+      </div>
+    </div>
+    
+    <!-- Experience & Equipment -->
+    <div class="max-w-6xl mx-auto mt-24 grid grid-cols-1 md:grid-cols-2 gap-12">
+      <div>
+        <h3 class="text-2xl font-playfair mb-6">Esperienza</h3>
+        <ul class="space-y-4">
+          <li class="pb-4 border-b border-gray-200">
+            <h4 class="font-medium">Fotografo freelance</h4>
+            <p class="text-gray-600 text-sm">2015 - Presente</p>
+            <p class="text-gray-700 mt-2">Servizi fotografici per clienti privati, aziende e pubblicazioni.</p>
+          </li>
+          <li class="pb-4 border-b border-gray-200">
+            <h4 class="font-medium">Collaboratore per riviste di viaggio</h4>
+            <p class="text-gray-600 text-sm">2018 - Presente</p>
+            <p class="text-gray-700 mt-2">Reportage fotografici per diverse riviste di viaggio e turismo.</p>
+          </li>
+          <li class="pb-4 border-b border-gray-200">
+            <h4 class="font-medium">Docente di fotografia</h4>
+            <p class="text-gray-600 text-sm">2019 - Presente</p>
+            <p class="text-gray-700 mt-2">Workshop e corsi di fotografia per principianti e fotografi avanzati.</p>
+          </li>
+        </ul>
+      </div>
+      <div>
+        <h3 class="text-2xl font-playfair mb-6">Attrezzatura</h3>
+        <ul class="space-y-4 text-gray-700">
+          <li class="pb-4 border-b border-gray-200">
+            <h4 class="font-medium">Fotocamere</h4>
+            <p class="mt-2">Sony Alpha A7 IV, Canon EOS R5, Fujifilm X-T4</p>
+          </li>
+          <li class="pb-4 border-b border-gray-200">
+            <h4 class="font-medium">Obiettivi</h4>
+            <p class="mt-2">Sony 24-70mm f/2.8 GM, Sony 70-200mm f/2.8 GM, Canon RF 50mm f/1.2L, Fujifilm XF 16-55mm f/2.8</p>
+          </li>
+          <li class="pb-4 border-b border-gray-200">
+            <h4 class="font-medium">Illuminazione</h4>
+            <p class="mt-2">Profoto B10 Plus, Godox AD200Pro, Softbox e modificatori vari</p>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </section>
+  
+  <!-- Footer -->
+  <footer class="bg-gray-100 py-12 px-6">
+    <div class="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-8">
+      <div>
+        <h3 class="font-playfair text-xl mb-4">Alessio Fotografo</h3>
+        <p class="text-gray-600 text-sm">Fotografo professionista specializzato in ritratti e paesaggi.</p>
+      </div>
+      <div>
+        <h3 class="font-playfair text-xl mb-4">Contatti</h3>
+        <ul class="text-sm space-y-2">
+          <li><a href="mailto:alessio@fotografo.com" class="text-gray-600 hover:text-black">alessio@fotografo.com</a></li>
+          <li><a href="tel:+391234567890" class="text-gray-600 hover:text-black">+39 123 456 7890</a></li>
+          <li><a href="https://instagram.com/alessiofotografo" class="text-gray-600 hover:text-black">Instagram: @alessiofotografo</a></li>
+        </ul>
+      </div>
+      <div>
+        <h3 class="font-playfair text-xl mb-4">Categorie</h3>
+        <ul class="text-sm space-y-2">
+          <li><a href="projects/ritratti.html" class="text-gray-600 hover:text-black">Ritratti</a></li>
+          <li><a href="projects/paesaggi.html" class="text-gray-600 hover:text-black">Paesaggi</a></li>
+          <li><a href="projects/still-life.html" class="text-gray-600 hover:text-black">Still Life</a></li>
+          <li><a href="projects/eventi.html" class="text-gray-600 hover:text-black">Eventi</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="max-w-6xl mx-auto mt-8 pt-8 border-t border-gray-200 text-center text-sm text-gray-500">
+      <p>&copy; 2025 Alessio Fotografo. Tutti i diritti riservati.</p>
+    </div>
+  </footer>
+  
+  <!-- Scroll to top button -->
+  <button id="scrollTop" class="hidden fixed bottom-4 right-4 bg-amber-500 text-white p-3 rounded-full focus:outline-none">u2191</button>
+  
+  <script type="module" src="js/main.js"></script>
+</body>
+</html>
