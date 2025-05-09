@@ -10,25 +10,16 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Playfair+Display:wght@400;600;700&display=swap" rel="stylesheet">
 </head>
-<body class="bg-white text-black antialiased">
-  <!-- Navbar -->
-  <nav class="fixed top-0 w-full backdrop-blur-md bg-white/50 z-50">
-    <div class="max-w-6xl mx-auto flex items-center justify-between py-4 px-6">
-      <a href="../index.html" class="font-playfair text-xl">{{ siteTitle }}</a>
-      <ul class="flex space-x-6 text-sm">
-        <li><a href="../index.html">Home</a></li>
-        <li><a href="../projects.html" class="font-medium">Progetti</a></li>
-        <li><a href="../about.html">Chi sono</a></li>
-        <li><a href="../contact.html">Contatti</a></li>
-      </ul>
-    </div>
-  </nav>
+<body class="bg-neutral-900 text-white antialiased">
+  <!-- Componente menu -->
+  <div data-component="menu"></div>
+  
   
   <!-- Project Header -->
   <header class="pt-32 pb-12 px-6">
     <div class="max-w-6xl mx-auto">
       <h1 class="text-4xl md:text-5xl font-playfair mb-6">Ritratti</h1>
-      <p class="max-w-2xl text-gray-600">Una selezione dei miei ritratti più significativi. Ogni ritratto cattura l'essenza e la personalità del soggetto in un momento unico.</p>
+      <p class="max-w-2xl text-gray-300">Una selezione dei miei ritratti più significativi. Ogni ritratto cattura l'essenza e la personalità del soggetto in un momento unico.</p>
     </div>
   </header>
   
@@ -86,13 +77,13 @@
   </section>
   
   <!-- Project Description -->
-  <section class="px-6 pb-24 bg-gray-50">
+  <section class="px-6 pb-24 bg-neutral-900">
     <div class="max-w-4xl mx-auto py-16">
       <h2 class="text-3xl font-playfair mb-6">Il mio approccio alla ritrattistica</h2>
-      <p class="mb-4 text-gray-700 leading-relaxed">Nella mia fotografia di ritratto, cerco di catturare l'essenza e la personalità unica di ogni soggetto. Che si tratti di un ritratto in studio o di un servizio all'aperto, il mio obiettivo è sempre quello di creare immagini autentiche e significative.</p>
-      <p class="mb-4 text-gray-700 leading-relaxed">Utilizzo tecniche di illuminazione avanzate per valorizzare i tratti del volto e creare atmosfere che riflettano la personalità del soggetto. Ogni sessione è personalizzata in base alle esigenze e ai desideri del cliente.</p>
-      <p class="text-gray-700 leading-relaxed">I miei servizi di ritrattistica includono:</p>
-      <ul class="list-disc pl-5 mt-2 mb-4 text-gray-700 space-y-1">
+      <p class="mb-4 text-gray-300 leading-relaxed">Nella mia fotografia di ritratto, cerco di catturare l'essenza e la personalità unica di ogni soggetto. Che si tratti di un ritratto in studio o di un servizio all'aperto, il mio obiettivo è sempre quello di creare immagini autentiche e significative.</p>
+      <p class="mb-4 text-gray-300 leading-relaxed">Utilizzo tecniche di illuminazione avanzate per valorizzare i tratti del volto e creare atmosfere che riflettano la personalità del soggetto. Ogni sessione è personalizzata in base alle esigenze e ai desideri del cliente.</p>
+      <p class="text-gray-300 leading-relaxed">I miei servizi di ritrattistica includono:</p>
+      <ul class="list-disc pl-5 mt-2 mb-4 text-gray-300 space-y-1">
         <li>Ritratti in studio</li>
         <li>Ritratti all'aperto</li>
         <li>Ritratti di famiglia</li>
@@ -107,44 +98,18 @@
   <section class="px-6 pb-24 text-center">
     <div class="max-w-3xl mx-auto">
       <h2 class="text-3xl font-playfair mb-6">Interessato a un servizio di ritratti?</h2>
-      <p class="text-gray-700 mb-8">Contattami per discutere del tuo progetto e prenotare una sessione fotografica.</p>
+      <p class="text-gray-300 mb-8">Contattami per discutere del tuo progetto e prenotare una sessione fotografica.</p>
       <a href="../contact.html" class="inline-block px-8 py-4 bg-black text-white rounded-lg hover:bg-gray-800 transition">Contattami</a>
     </div>
   </section>
   
-  <!-- Footer -->
-  <footer class="bg-gray-100 py-12 px-6">
-    <div class="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-8">
-      <div>
-        <h3 class="font-playfair text-xl mb-4">Alessio Fotografo</h3>
-        <p class="text-gray-600 text-sm">Fotografo professionista specializzato in ritratti e paesaggi.</p>
-      </div>
-      <div>
-        <h3 class="font-playfair text-xl mb-4">Contatti</h3>
-        <ul class="text-sm space-y-2">
-          <li><a href="mailto:alessio@fotografo.com" class="text-gray-600 hover:text-black">alessio@fotografo.com</a></li>
-          <li><a href="tel:+391234567890" class="text-gray-600 hover:text-black">+39 123 456 7890</a></li>
-          <li><a href="https://instagram.com/alessiofotografo" class="text-gray-600 hover:text-black">Instagram: @alessiofotografo</a></li>
-        </ul>
-      </div>
-      <div>
-        <h3 class="font-playfair text-xl mb-4">Categorie</h3>
-        <ul class="text-sm space-y-2">
-          <li><a href="ritratti.html" class="text-gray-600 hover:text-black">Ritratti</a></li>
-          <li><a href="paesaggi.html" class="text-gray-600 hover:text-black">Paesaggi</a></li>
-          <li><a href="still-life.html" class="text-gray-600 hover:text-black">Still Life</a></li>
-          <li><a href="eventi.html" class="text-gray-600 hover:text-black">Eventi</a></li>
-        </ul>
-      </div>
-    </div>
-    <div class="max-w-6xl mx-auto mt-8 pt-8 border-t border-gray-200 text-center text-sm text-gray-500">
-      <p>&copy; 2025 Alessio Fotografo. Tutti i diritti riservati.</p>
-    </div>
-  </footer>
+  <!-- Componente footer -->
+  <div data-component="footer"></div>
   
   <!-- Scroll to top button -->
   <button id="scrollTop" class="hidden fixed bottom-4 right-4 bg-amber-500 text-white p-3 rounded-full focus:outline-none">↑</button>
   
   <script type="module" src="../js/main.js"></script>
+  <script src="../js/components.js"></script>
 </body>
 </html>

@@ -1,0 +1,42 @@
+<!-- Menu per desktop -->  
+<nav class="bg-neutral-900 w-full fixed top-0 left-0 z-50 shadow-md">
+  <div class="container mx-auto flex justify-between items-center py-4 px-6">
+    <div class="text-2xl font-bold uppercase text-white">
+      Alessio Rossetti
+    </div>
+    <div class="hidden md:flex space-x-8">
+      <a href="index.html" class="text-white hover:text-amber-500 font-medium">Home</a>
+      <a href="projects.html" class="text-white hover:text-amber-500 font-medium">Progetti</a>
+      <a href="about.html" class="text-white hover:text-amber-500 font-medium">Chi sono</a>
+      <a href="contact.html" class="text-white hover:text-amber-500 font-medium">Contatti</a>
+    </div>
+    <!-- Mobile menu button - solo visibile su mobile -->
+    <div class="md:hidden">
+      <a href="#" id="menu-toggle" class="block text-white">
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" class="w-8 h-8">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+        </svg>
+      </a>
+    </div>
+  </div>
+</nav>
+
+<!-- Menu overlay per mobile -->
+<div id="menu-overlay" class="fixed inset-0 z-[9998] bg-black/95 hidden">
+  <div class="h-full w-full flex flex-col justify-center items-center">
+    <button id="close-menu" class="absolute top-6 right-6 text-white">
+      <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" class="w-8 h-8">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
+      </svg>
+    </button>
+    <div class="flex flex-col space-y-4 text-center">
+      <a href="index.html" class="text-white text-2xl hover:text-amber-500 py-2">Home</a>
+      <a href="projects.html" class="text-white text-2xl hover:text-amber-500 py-2">Progetti</a>
+      <a href="about.html" class="text-white text-2xl hover:text-amber-500 py-2">Chi sono</a>
+      <a href="contact.html" class="text-white text-2xl hover:text-amber-500 py-2">Contatti</a>
+    </div>
+  </div>
+</div>
+
+<!-- Spazio per compensare la navbar fissa -->
+<div class="h-20"></div>

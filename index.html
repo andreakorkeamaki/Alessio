@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>{{ siteTitle }}</title>
   <meta name="description" content="Portfolio fotografico di Alessio Rossetti - Ritratti, paesaggi e still life.">
-  <link rel="stylesheet" href="css/styles.css">
+  <link href="./css/styles.css" rel="stylesheet">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Anton&family=Inter:wght@400;500;600&family=Playfair+Display:wght@400;600;700&display=swap" rel="stylesheet">
@@ -19,35 +19,12 @@
   }
   </script>
 </head>
-<body class="bg-white text-black antialiased">
-  <!-- Navbar semplice con menu desktop -->
-  <nav class="bg-white w-full fixed top-0 left-0 z-50 shadow-md">
-    <div class="container mx-auto flex justify-between items-center py-4 px-6">
-      <div class="text-2xl font-bold uppercase">
-        Alessio Rossetti
-      </div>
-      <div class="hidden md:flex space-x-8">
-        <a href="index.html" class="text-black hover:text-amber-500 font-medium">Home</a>
-        <a href="projects.html" class="text-black hover:text-amber-500 font-medium">Progetti</a>
-        <a href="about.html" class="text-black hover:text-amber-500 font-medium">Chi sono</a>
-        <a href="contact.html" class="text-black hover:text-amber-500 font-medium">Contatti</a>
-      </div>
-      <!-- Mobile menu button - solo visibile su mobile -->
-      <div class="md:hidden">
-        <a href="#" onclick="return false;" class="block md:hidden text-black">
-          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" class="w-8 h-8">
-            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
-          </svg>
-        </a>
-      </div>
-    </div>
-  </nav>
-  
-  <!-- Spazio per compensare la navbar fissa -->
-  <div class="h-20"></div>
+<body class="bg-neutral-900 text-white antialiased">
+  <!-- Componente menu -->
+  <div data-component="menu"></div>
   
   <!-- Hero Slideshow -->
-  <header class="min-h-[95vh] flex items-center bg-white relative overflow-hidden" id="hero-slideshow">
+  <header class="min-h-[95vh] flex items-center bg-neutral-900 relative overflow-hidden" id="hero-slideshow">
     <div class="absolute inset-0 w-full h-full pointer-events-none select-none">
       <div class="slide active" style="background-image:url('assets/images/hero_1.webp');"></div>
       <div class="slide" style="background-image:url('assets/images/hero_2.webp');"></div>
@@ -56,11 +33,11 @@
     </div>
     <div class="w-full max-w-7xl mx-auto flex flex-col md:flex-row items-center md:items-center justify-start z-10 relative py-24">
       <div class="w-full md:w-1/2 flex flex-col justify-center items-start px-6 md:px-16">
-        <h1 class="filled-title text-5xl sm:text-7xl md:text-8xl leading-none mb-6 uppercase">ALESSIO<br><span class="block">ROSSETTI</span></h1>
+        <h1 class="text-white text-5xl sm:text-7xl md:text-8xl leading-none mb-6 uppercase">ALESSIO<br><span class="block">ROSSETTI</span></h1>
         <div class="mt-8 mb-8">
-          <p class="text-2xl md:text-4xl font-bold uppercase leading-tight tracking-tight filled-title">FOTOGRAFO<br>EVENTI<br>FASHION</p>
+          <p class="text-2xl md:text-4xl font-bold uppercase leading-tight tracking-tight text-white">FOTOGRAFO<br>EVENTI<br>FASHION</p>
         </div>
-        <a href="projects.html" class="inline-block border border-black text-black px-8 py-3 font-light text-base uppercase tracking-wider hover:bg-black hover:text-white transition mt-4">Esplora i progetti</a>
+        <a href="projects.html" class="inline-block border border-white text-white px-8 py-3 font-light text-base uppercase tracking-wider hover:bg-white hover:text-neutral-900 transition mt-4">Esplora i progetti</a>
       </div>
       <div class="hidden md:block w-1/2"></div>
     </div>
@@ -69,7 +46,7 @@
   <!-- Featured Projects -->
   <section class="py-24 px-6">
     <div class="max-w-6xl mx-auto">
-      <h2 class="text-3xl md:text-4xl outline-title mb-12 text-center uppercase">PROGETTI IN EVIDENZA</h2>
+      <h2 class="text-3xl md:text-4xl text-white mb-12 text-center uppercase">PROGETTI IN EVIDENZA</h2>
       
       <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
         <!-- Project 1 - Musica dal vivo -->
@@ -111,7 +88,7 @@
         <p class="mb-4 text-lg leading-relaxed font-light">Alessio Rossetti, nato e cresciuto nell'area di Milano, è un fotografo professionista specializzato in ritratti, eventi e fotografia fashion.<br><br>
         Fin da giovane si è appassionato all'arte visiva e alla musica, portando questa sensibilità nei suoi scatti. Nel corso della sua carriera ha collaborato con artisti, musicisti, designer e brand di rilievo, raccontando storie attraverso immagini uniche.<br><br>
         Alessio ha fotografato eventi, concerti e shooting di moda, sviluppando una rete professionale con agenzie e case di produzione. Le sue foto sono state pubblicate su riviste e mostre in tutta Italia.</p>
-        <a href="about.html" class="mt-8 px-8 py-3 border border-white text-white font-semibold uppercase hover:bg-white hover:text-neutral-900 transition">Scopri di più</a>
+        <a href="about.html" class="mt-8 px-8 py-3 border border-white text-white font-semibold uppercase hover:bg-neutral-900 hover:text-neutral-900 transition">Scopri di più</a>
       </div>
       <!-- Image side -->
       <div class="flex justify-center items-center">
@@ -124,47 +101,19 @@
   <section class="py-24 px-6 text-center">
     <div class="max-w-3xl mx-auto">
       <h2 class="text-3xl md:text-4xl mb-6 uppercase">HAI UN PROGETTO IN MENTE?</h2>
-      <p class="text-gray-700 mb-8 text-lg">Contattami per discutere del tuo progetto fotografico o per richiedere informazioni sui miei servizi.</p>
+      <p class="text-gray-300 mb-8 text-lg">Contattami per discutere del tuo progetto fotografico o per richiedere informazioni sui miei servizi.</p>
       <a href="contact.html" class="inline-block px-8 py-4 bg-black text-white rounded-lg hover:bg-gray-800 transition">Contattami</a>
     </div>
   </section>
   
-  <!-- Footer -->
-  <footer class="bg-gray-100 py-12 px-6">
-    <div class="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-8">
-      <!-- Categorie corrette -->
-      <div>
-        <h3 class="text-xl font-bold uppercase mb-4">Categorie</h3>
-        <ul class="space-y-2 text-gray-700">
-          <li><a href="projects/musica.html" class="hover:underline">Musica dal vivo</a></li>
-          <li><a href="projects/eventi.html" class="hover:underline">Eventi</a></li>
-          <li><a href="projects/fashion.html" class="hover:underline">Fashion</a></li>
-          <li><a href="projects/ritratti.html" class="hover:underline">Ritratti</a></li>
-        </ul>
-      </div>
-      <div>
-        <h3 class="text-xl mb-4 uppercase">ALESSIO ROSSETTI</h3>
-        <p class="text-gray-600 text-sm">Fotografo professionista specializzato in ritratti e paesaggi.</p>
-      </div>
-      <div>
-        <h3 class="text-xl mb-4 uppercase">CONTATTI</h3>
-        <ul class="text-sm space-y-2">
-          <li><a href="mailto:alessio@fotografo.com" class="text-gray-600 hover:text-black">alessio@fotografo.com</a></li>
-          <li><a href="tel:+391234567890" class="text-gray-600 hover:text-black">+39 123 456 7890</a></li>
-          <li><a href="https://instagram.com/alessiorossetti" class="text-gray-600 hover:text-black">Instagram: @alessiorossetti</a></li>
-        </ul>
-      </div>
-
-    </div>
-    <div class="max-w-6xl mx-auto mt-8 pt-8 border-t border-gray-200 text-center text-sm text-gray-500">
-      <p>&copy; 2025 Alessio Rossetti. Tutti i diritti riservati.</p>
-    </div>
-  </footer>
+  <!-- Componente footer -->
+  <div data-component="footer"></div>
   
   <!-- Scroll to top button -->
   <button id="scrollTop" class="hidden fixed bottom-4 right-4 bg-amber-500 text-white p-3 rounded-full focus:outline-none">↑</button>
   
   <script type="module" src="js/main.js"></script>
+  <script src="js/components.js"></script>
   <script>
     // Script per il menu hamburger
     document.addEventListener('DOMContentLoaded', function() {
