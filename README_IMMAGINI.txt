@@ -17,9 +17,6 @@ Nota: Le seguenti immagini sono necessarie per completare il sito. Alcune immagi
    - assets/images/project1.jpg - Musica dal vivo (dimensioni consigliate: 800x1000px)
    - assets/images/project2.jpg - Eventi (dimensioni consigliate: 800x1000px)
    - assets/images/project3.jpg - Fashion (dimensioni consigliate: 800x1000px)
-   - assets/images/project4.jpg - Musica dal vivo 2 (dimensioni consigliate: 800x1000px)
-   - assets/images/project5.jpg - Eventi 2 (dimensioni consigliate: 800x1000px)
-   - assets/images/project6.jpg - Fashion 2 (dimensioni consigliate: 800x1000px)
 
 3. Immagini per la pagina dei ritratti:
    - assets/images/ritratto1.jpg - Ritratto in studio (dimensioni consigliate: 800x1000px)
